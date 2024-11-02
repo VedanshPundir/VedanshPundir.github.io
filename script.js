@@ -182,3 +182,19 @@ document.addEventListener("DOMContentLoaded", function() {
         skillsSection.classList.add('visible');
     }, 1000); // Delay in milliseconds (1000ms = 1s)
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const skillCircles = document.querySelectorAll(".skill-circle");
+
+    skillCircles.forEach(circle => {
+        const percentage = circle.getAttribute("data-percentage");
+
+        // Set the percentage as a CSS variable for the conic-gradient
+        const progress = circle.querySelector('.progress');
+        progress.style.setProperty('--percentage', percentage);
+
+        // Update the percentage text inside the circle
+        const percentageText = circle.querySelector(".percentage");
+        percentageText.textContent = `${percentage}%`;
+    });
+});
