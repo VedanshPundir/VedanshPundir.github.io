@@ -107,7 +107,7 @@ body {
 /* Portfolio section styles */
 .portfolio { 
     margin: 4.8rem 0; 
-    padding: 0 5rem; 
+    padding: 0 5rem;
 } 
 
 .port-card { 
@@ -347,6 +347,7 @@ body {
 .small-para { 
     font-size: 14px; 
     color: #fff; 
+
 } 
 
 .white-text { 
@@ -1255,3 +1256,4 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
