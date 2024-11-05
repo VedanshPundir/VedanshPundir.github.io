@@ -854,7 +854,7 @@ body {
 
 /* Home page specific background image */
 body #home {
-    background-image: url('blue-abstract-gradient-background-website-application_389520-60.jpg'); /* Path to your image */
+    background-image: url('home.jpg'); /* Path to your image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
