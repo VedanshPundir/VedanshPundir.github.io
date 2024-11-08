@@ -138,7 +138,7 @@
        
        <!-- Achievements Section -->
     <section class="achievements" id="achievements">
-        <h2 class="achievements-heading"style="color: white" >Achievements</h2>
+        <h2 class="achievements-heading"style="color: white;font-size:36px" >Achievements</h2>
      <div class="achievements-grid">
         <div class="achievement-card">
             <div class="achievement-image">
@@ -299,55 +299,64 @@
 
     <!-- Skills Section -->
 <section class="skills" id="skills">
-    <h2 class="skillsheading" style="color: rgb(91, 113, 209)">Skills</h2>
-    <div class="skillslist">
-        <!-- Skill Circle for C -->
-        <div class="skill-circle" data-percentage="90">
-            <div class="circle">
-                <div class="progress"></div>
-                <div class="percentage">90%</div>
-            </div>
-            
+    <h1 class="skillsheading" style="color: rgb(76, 109, 226);font-size:36px ">Skills</h1>
+    <div class="progress-container">
+        
+        <!-- Progress Bar 1 (90%) -->
+        <div class="progress-bar-wrapper" style="--progress-offset: 44;">
+            <svg class="progress-bar" xmlns="http://www.w3.org/2000/svg" width="160" height="160">
+                <defs>
+                    <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#e91e63" />
+                        <stop offset="100%" stop-color="#673ab7" />
+                    </linearGradient>
+                </defs>
+                <circle class="circle-background" cx="80" cy="80" r="70" />
+                <circle class="circle-progress" cx="80" cy="80" r="70" />
+            </svg>
+            <div class="percentage-text">90%</div>
             <span class="skill-name">Front-End<br>Development</span>
         </div>
-
-        <!-- Skill Circle for C++ -->
-        <div class="skill-circle" data-percentage="85">
-            <div class="circle">
-                <div class="progress"></div>
-                <div class="percentage">85%</div>
-            </div>
-            <span class="skill-name">Database<br>management</span>
+    
+        <!-- Progress Bar 2 (85%) -->
+        <div class="progress-bar-wrapper" style="--progress-offset: 65;">
+            <svg class="progress-bar" xmlns="http://www.w3.org/2000/svg" width="160" height="160">
+                <circle class="circle-background" cx="80" cy="80" r="70" />
+                <circle class="circle-progress" cx="80" cy="80" r="70" />
+            </svg>
+            <div class="percentage-text">85%</div>
+            <span class="skill-name">Web<br>Development</span>
         </div>
-
-        <!-- Skill Circle for Java -->
-        <div class="skill-circle" data-percentage="80">
-            <div class="circle">
-                <div class="progress"></div>
-                <div class="percentage">80%</div>
-            </div>
-            <span class="skill-name">cybersecurity<br>skills</span>
+    
+        <!-- Progress Bar 3 (80%) -->
+        <div class="progress-bar-wrapper" style="--progress-offset: 75;">
+            <svg class="progress-bar" xmlns="http://www.w3.org/2000/svg" width="160" height="160">
+                <circle class="circle-background" cx="80" cy="80" r="70" />
+                <circle class="circle-progress" cx="80" cy="80" r="70" />
+            </svg>
+            <div class="percentage-text">80%</div>
+            <span class="skill-name">CyberSecurity<br>Skills</span>
         </div>
-
-        <!-- Additional Skills -->
-        <div class="skill-circle" data-percentage="75">
-            <div class="circle">
-                <div class="progress"></div>
-                <div class="percentage">75%</div>
-            </div>
-            <span class="skill-name">Back-End<br>Development</span>
+    
+        <!-- Progress Bar 4 (75%) -->
+        <div class="progress-bar-wrapper" style="--progress-offset: 185;">
+            <svg class="progress-bar" xmlns="http://www.w3.org/2000/svg" width="160" height="160">
+                <circle class="circle-background" cx="80" cy="80" r="70" />
+                <circle class="circle-progress" cx="80" cy="80" r="70" />
+            </svg>
+            <div class="percentage-text">75%</div>
+            <span class="skill-name">Cyber<br>Security</span>
         </div>
-
-        <div class="skill-circle" data-percentage="70">
-            <div class="circle">
-                <div class="progress"></div>
-                <div class="percentage">70%</div>
-            </div>
-            <span class="skill-name">Documentations<br>skills</span>
+    
+        <!-- Progress Bar 5 (70%) -->
+        <div class="progress-bar-wrapper" style="--progress-offset: 201;">
+            <svg class="progress-bar" xmlns="http://www.w3.org/2000/svg" width="160" height="160">
+                <circle class="circle-background" cx="80" cy="80" r="70" />
+                <circle class="circle-progress" cx="80" cy="80" r="70" />
+            </svg>
+            <div class="percentage-text">70%</div>
+            <span class="skill-name">Documentations</span>
         </div>
-
-        
-        
     </div>
 </section>
 
