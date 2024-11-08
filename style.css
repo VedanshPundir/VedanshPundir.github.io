@@ -1091,169 +1091,82 @@ body {
     }
 }
 
-/* General styling for the skills section */
+/* Skill Section General Styling */
 .skills {
+    background-color: #fff;
     padding: 50px;
-    background-color: #e0e0e0;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    white-space: nowrap; /* Prevent line breaks for side scroll */
-    text-align: center; /* Center the entire skills section */
-}
-
-/* Heading Styling */
-.skillsheading {
-    color: #333;
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    white-space: normal; /* Allow normal text wrapping for the heading */
-}
-
-/* Skills List Styling */
-.skillslist {
-    display: flex;
-    flex-wrap: nowrap; /* Ensure all skill circles are in a single line */
-    gap: 20px; /* Add spacing between skill circles */
-    justify-content: center; /* Center-align the skills list */
-}
-
-/* Skill Circle Container */
-.skill-circle {
-    position: relative;
-    width: 180px; /* Increase the size of the skill circle container */
-    height: 180px; /* Increase the size of the skill circle container */
     text-align: center;
-    flex: 0 0 auto; /* Prevent skill circles from shrinking */
 }
 
-/* Neomorphic Effect for Circle */
-.circle {
-    position: relative;
-    width: 150px; /* Increase the size of the circle */
-    height: 150px; /* Increase the size of the circle */
-    border-radius: 50%;
-    background: #e0e0e0;
-    box-shadow: 9px 9px 16px rgba(0, 0, 0, 0.15), -9px -9px 16px rgba(255, 255, 255, 0.8);
+.skillsheading {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Container for all progress bars */
+.progress-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    transition: transform 0.3s ease; /* Smooth zoom-out animation */
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-/* Progress Bar */
-.progress {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 150px; /* Increase the size of the progress bar */
-    height: 150px; /* Increase the size of the progress bar */
-    border-radius: 50%;
-    background: conic-gradient(
-        #1e90ff calc(var(--percentage) * 1%), /* Change the color to blue */
-        #e0e0e0 calc(var(--percentage) * 1%)
-    );
-    z-index: 1; /* Ensure progress bar is behind the percentage */
-    transition: background 0.5s ease; /* Smooth animation */
-}
-
-/* Percentage Text Inside Circle */
-.percentage {
+/* Each Progress Bar Wrapper */
+.progress-bar-wrapper {
     position: relative;
-    z-index: 2; /* Ensure percentage text is on top */
-    font-size: 1.2rem; /* Reduce the size of the percentage text */
-    font-weight: bold;
-    color: #ffffff; /* Change the color of the percentage text to white */
-    font-family: 'Poppins', sans-serif; /* Use a clean modern font */
+    width: 160px;
+    height: 160px;
+    margin: 20px;
+    text-align: center;
+    opacity: 1; /* Make sure it is visible by default */
+    transition: transform 1s ease-in-out;
 }
 
-/* Skill Name Below Circle */
+/* Circle background */
+.circle-background {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 10;
+}
+
+/* Circle progress */
+.circle-progress {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke-dasharray: 440; /* Total length of the circle */
+    stroke-dashoffset: 440; /* Initially hidden */
+    transition: stroke-dashoffset 1s ease-in-out; /* Smooth progress animation */
+}
+
+/* Hover effect for progress bars */
+.progress-bar-wrapper:hover .circle-progress {
+    animation: progress-animation 2s ease-out forwards;
+}
+
+/* Animate the progress to fill the circle */
+@keyframes progress-animation {
+    from {
+        stroke-dashoffset: 440; /* Start with circle hidden */
+    }
+    to {
+        stroke-dashoffset: var(--progress-offset); /* End at the desired percentage */
+    }
+}
+
+/* Centering the percentage text */
+.percentage-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Skill Name Styling */
 .skill-name {
+    text-align: center;
+    font-size: 14px;
     margin-top: 10px;
-    color: #333;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
 }
-
-/* Hover Effect for Circular Zoom-Out */
-.skill-circle:hover .circle {
-    transform: scale(1.05); /* Slight zoom-out effect on the circle */
-    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.2), -15px -15px 20px rgba(255, 255, 255, 0.6);
-}
-
-/* Animation for the progress */
-.skill-circle[data-percentage="90"] .progress {
-    background: conic-gradient(
-        #1e90ff 90%, /* Change the color to blue */
-        #e0e0e0 10%
-    );
-}
-
-.skill-circle[data-percentage="85"] .progress {
-    background: conic-gradient(
-        #1e90ff 85%, /* Change the color to blue */
-        #e0e0e0 15%
-    );
-}
-
-.skill-circle[data-percentage="80"] .progress {
-    background: conic-gradient(
-        #1e90ff 80%, /* Change the color to blue */
-        #e0e0e0 20%
-    );
-}
-
-.skill-circle[data-percentage="75"] .progress {
-    background: conic-gradient(
-        #1e90ff 75%, /* Change the color to blue */
-        #e0e0e0 25%
-    );
-}
-
-.skill-circle[data-percentage="70"] .progress {
-    background: conic-gradient(
-        #1e90ff 70%, /* Change the color to blue */
-        #e0e0e0 30%
-    );
-}
-
-.skill-circle[data-percentage="65"] .progress {
-    background: conic-gradient(
-        #1e90ff 65%, /* Change the color to blue */
-        #e0e0e0 35%
-    );
-}
-
-.skill-circle[data-percentage="60"] .progress {
-    background: conic-gradient(
-        #1e90ff 60%, /* Change the color to blue */
-        #e0e0e0 40%
-    );
-}
-
-.skill-circle[data-percentage="55"] .progress {
-    background: conic-gradient(
-        #1e90ff 55%, /* Change the color to blue */
-        #e0e0e0 45%
-    );
-}
-
-.skill-circle[data-percentage="50"] .progress {
-    background: conic-gradient(
-        #1e90ff 50%, /* Change the color to blue */
-        #e0e0e0 50%
-    );
-}
-
-/* Add more percentages as needed */
-/* Skill Name Below Circle */
-.skill-name {
-    margin-top: 10px;
-    color: #1e90ff; /* Change the color of the skill name to blue */
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
