@@ -198,3 +198,27 @@ document.addEventListener("DOMContentLoaded", function () {
         percentageText.textContent = `${percentage}%`;
     });
 });
+
+// Initialize the Intersection Observer
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        // If the progress bar is in view, add the class "show" to trigger animation
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            // If you don't need to observe it anymore, you can unobserve
+            observer.unobserve(entry.target);
+            
+            // Triggering the stroke-dashoffset animation
+            const progressCircle = entry.target.querySelector('.circle-progress');
+            const progressOffset = entry.target.style.getPropertyValue('--progress-offset');
+            progressCircle.style.strokeDashoffset = 440 - (440 * progressOffset / 360);
+        }
+    });
+}, { threshold: 0.5 }); // Trigger the animation when 50% of the element is visible
+
+// Target the progress bars
+const progressBars = document.querySelectorAll('.progress-bar-wrapper');
+progressBars.forEach(bar => {
+    observer.observe(bar);
+});
+
