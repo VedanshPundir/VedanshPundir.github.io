@@ -1170,3 +1170,8 @@ body {
     font-size: 14px;
     margin-top: 10px;
 }
+ .my-row .my-col .port-card {
+        background-color: #20619a; /* You can replace with any color you prefer */
+        padding: 20px;  /* Optional: Add padding for better visual spacing */
+        border-radius: 8px; /* Optional: Add border radius for rounded corners */
+    }
