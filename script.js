@@ -221,4 +221,11 @@ const progressBars = document.querySelectorAll('.progress-bar-wrapper');
 progressBars.forEach(bar => {
     observer.observe(bar);
 });
-
+function sendEmail() {
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    const subject = encodeURIComponent('Message from Portfolio Website');
+    const body = encodeURIComponent(`From: ${email}\n\nMessage: \n${message}`);
+    
+    window.location.href = `mailto:vedanshpundir43@gmail.com?subject=${subject}&body=${body}`;
+  }
