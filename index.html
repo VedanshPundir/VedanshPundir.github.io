@@ -422,27 +422,31 @@
     </section>
 
    <!-- Contact Me Section -->
-<center><section class="contact" id="contact"> 
-    <div class="contact-heading"> 
-        <h1 class="my-heading text-center">Contact Me</h1> 
+<center><!-- Contact Me Section -->
+<section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact Me</h2>
+  
+      <!-- Email Form -->
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+      </div>
+      <button onclick="sendEmail()" class="btn-submit">Send Message via Email</button>
+  
+      
+  
+      <!-- WhatsApp Button -->
+      <a href="https://wa.me/9410993720" target="_blank" class="whatsapp-btn">Message me on WhatsApp</a>
+      
     </div> 
-
-    <div class="contact-details"> 
-        <div class="details"> 
-            <h5 class="contact-heading">Email</h5> 
-            <p class="contact-text"><a href="mailto:vedanshpundir43@gmail.com" class="contact-link">vedanshpundir43@gmail.com</a></p> 
-        </div> 
-        <div class="details"> 
-            <h5 class="contact-heading">Phone</h5> 
-            <p class="contact-text"><a href="tel:+919410993720" class="contact-link">+91 9410993720</a></p> 
-        </div> 
-        <div class="details"> 
-            <h5 class="contact-heading">Address</h5> 
-            <p class="contact-text">Dehradun, Uttarakhand, India</p> 
-            <p class="contact-text">PO. Nanda Ki Chowki, Premnagar</p> 
-        </div> 
-    </div> 
-</section></center>
+    </div>
+    
+  </section></center>
 
 
 
