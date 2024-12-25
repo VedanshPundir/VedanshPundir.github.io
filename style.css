@@ -1643,18 +1643,7 @@ body {
     margin-bottom: 20px;
 }
 
-.portfolio-img {
-    width: 100%;
-    height: auto;
-}
 
-.port-card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
 
 /* Responsive adjustments */
 @media (max-width: 1200px) {
