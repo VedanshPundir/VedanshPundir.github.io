@@ -1628,3 +1628,69 @@ body {
 </svg>
 
 
+/* Basic styles */
+.portfolio-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.my-col {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.portfolio-img {
+    width: 100%;
+    height: auto;
+}
+
+.port-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .my-col {
+        flex: 1 1 calc(50% - 20px); /* 2 columns on medium-sized screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .my-col {
+        flex: 1 1 100%; /* 1 column on small screens */
+    }
+
+    .portfolio-heading h1 {
+        font-size: 30px; /* Adjust heading font size */
+    }
+
+    .small-para {
+        font-size: 14px; /* Adjust paragraph font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-heading h1 {
+        font-size: 25px; /* Even smaller heading font size for extra small devices */
+    }
+
+    .small-para {
+        font-size: 12px; /* Adjust paragraph font size for mobile screens */
+    }
+}
+
+.my-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
