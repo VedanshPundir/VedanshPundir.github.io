@@ -1976,3 +1976,39 @@ body {
 .intro-buttons .btn:hover {
     background-color: #0097a7;
 }
+
+.my-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .image-container {
+        width: 100%;
+        height: 200px; /* Set the desired height */
+        overflow: hidden;
+    }
+
+    .portfolio-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures the image covers the container without distortion */
+        display: block;
+    }
+
+    .greet-heading {
+        margin-top: 15px; /* Adds some spacing between the image and heading */
+    }
+
+    .small-para {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .btn {
+        margin-top: 15px;
+    }
