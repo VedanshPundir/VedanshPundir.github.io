@@ -1977,7 +1977,7 @@ body {
     background-color: #0097a7;
 }
 
-.my-card {
+ .my-card {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1985,23 +1985,25 @@ body {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         border-radius: 8px;
         overflow: hidden;
+        width: 100%; /* Adjust width as needed */
+        max-width: 400px; /* Example max width for better layout */
+        margin: auto; /* Center the card */
     }
 
     .image-container {
         width: 100%;
-        height: 200px; /* Set the desired height */
-        overflow: hidden;
+        height: auto;
     }
 
     .portfolio-img {
         width: 100%;
-        height: 100%;
-        object-fit: cover; /* Ensures the image covers the container without distortion */
+        height: auto; /* Let the image resize based on its natural height */
         display: block;
     }
 
     .greet-heading {
         margin-top: 15px; /* Adds some spacing between the image and heading */
+        text-align: center;
     }
 
     .small-para {
