@@ -850,14 +850,19 @@ body {
     height: 100vh; /* Ensures body takes the full viewport height */
     margin: 0; /* Remove default margin */
 }
-
+html, body {
+    height: 100%; /* Ensure the body takes up the full height */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
 
 /* Home page specific background image */
 body #home {
     background-image: url('newback.jpg'); /* Path to your image */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size: cover; /* Ensure the image covers the entire element */
+    background-position: center; /* Center the background */
+    background-repeat: no-repeat; /* Prevent repeating */
+    height: 100vh; /* Set the height to 100% of the viewport */
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet');
