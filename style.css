@@ -864,6 +864,14 @@ body #home {
     background-repeat: no-repeat; /* Prevent repeating */
     height: 100vh; /* Set the height to 100% of the viewport */
 }
+.portfolio {
+    background-image: url('repoback.jpg');
+    background-size: cover; /* Ensures the image covers the section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Fixes the background while scrolling */
+    padding: 50px 0; /* Adjusts the padding for spacing */
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet');
 
