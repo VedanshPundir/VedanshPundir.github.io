@@ -244,7 +244,54 @@ body {
     height: auto; /* Maintain aspect ratio */
 }
 
+.portfolio {
+    padding: 50px 0;
+    background-color: #1a1a1a;
+}
 
+.portfolio-heading {
+    margin-bottom: 30px;
+}
+
+.portfolio-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust spacing between items */
+    gap: 15px; /* Reduce gap between items */
+}
+
+.my-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.my-col {
+    flex: 1 1 calc(30% - 15px); /* Reduce column width to 30% to avoid extra spaces */
+    max-width: calc(30% - 15px); /* Set max-width to 30% minus gap */
+    margin: 5px;
+}
+
+.my-card {
+    padding: 15px; /* Slightly reduce padding for smaller divs */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 1024px) {
+    .my-col {
+        flex: 1 1 calc(45% - 15px); /* Switch to 45% width on medium screens */
+        max-width: calc(45% - 15px);
+    }
+}
+
+@media (max-width: 768px) {
+    .my-col {
+        flex: 1 1 100%; /* Full width on small screens */
+        max-width: 100%;
+    }
+}
 
 
 /* utility classes */
