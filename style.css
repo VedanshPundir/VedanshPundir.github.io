@@ -708,41 +708,6 @@ body {
     background-color: #efe9e9; /* Light Grey */
 }
 
-/* General Portfolio Section Styles */
-.portfolio {
-    background-color: #e6e6ff; /* Light background for contrast */
-    padding: 50px 0; /* Top and bottom padding */
-}
-
-.portfolio-heading {
-    text-align: center; /* Center the heading */
-    margin-bottom: 30px; /* Space below heading */
-}
-
-/* Individual Card Styles */
-.port-card {
-    background-color: #937575; /* Card background */
-    border: 1px solid #e0e0e0; /* Card border */
-    border-radius: 8px; /* Rounded corners */
-    padding: 20px; /* Padding inside cards */
-    text-align: center; /* Center text */
-    transition: transform 0.3s, box-shadow 0.3s; /* Animation for hover effects */
-}
-
-.port-card:hover {
-    transform: scale(1.05); /* Scale up on hover */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow effect on hover */
-}
-
-/* Link Styles */
-.project-link {
-    color: #007bff; /* Link color */
-    text-decoration: none; /* Remove underline */
-}
-
-.project-link:hover {
-    text-decoration: underline; /* Underline on hover */
-}
 
 /* Text Styles */
 .small-para {
