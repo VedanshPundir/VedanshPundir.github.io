@@ -8,6 +8,55 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
+    <style>.portfolio {
+    padding: 50px 0;
+    background-color: #1a1a1a;
+}
+
+.portfolio-heading {
+    margin-bottom: 30px;
+}
+
+.portfolio-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.my-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.my-col {
+    flex: 1 1 calc(33.333% - 20px); /* Takes 1/3 of the row, leaving space for margins */
+    max-width: calc(33.333% - 20px); /* Sets the max width of each column */
+    margin: 10px;
+}
+
+.my-card {
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Make columns stack on smaller screens */
+@media (max-width: 1024px) {
+    .my-col {
+        flex: 1 1 calc(50% - 20px); /* Switches to two columns on medium screens */
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .my-col {
+        flex: 1 1 100%; /* Full width on small screens */
+        max-width: 100%;
+    }
+}
+</style>
 </head>
 
 <body>
