@@ -276,6 +276,9 @@ body {
 .my-card {
     padding: 15px; /* Slightly reduce padding for smaller divs */
     transition: transform 0.3s, box-shadow 0.3s;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    border: 4px solid white; /* Thick white border */
+    color: white; /* Text color inside the card */
 }
 
 /* Media queries for responsive design */
@@ -292,6 +295,7 @@ body {
         max-width: 100%;
     }
 }
+
 
 
 /* utility classes */
