@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="responsive.css">
     <style>
         /* Portfolio Section */
+          /* Portfolio Section */
 .portfolio {
     padding: 50px 0;
     background-color: transparent;
@@ -44,16 +45,16 @@
 }
 
 .my-col {
-    flex: 1 1 calc(30% - 15px); /* Set columns to take up 30% of width minus gap */
-    max-width: calc(30% - 15px); /* Ensure no overflow, column width is capped */
+    flex: 1 1 calc(45% - 15px); /* Set columns to take up 45% of width for larger size */
+    max-width: calc(45% - 15px); /* Ensure no overflow, larger width for divs */
     margin: 5px;
-    display: flex; /* Flexbox for the columns */
+    display: flex;
     flex-direction: column; /* Arrange child elements vertically */
 }
 
 /* Individual Card Styling */
 .my-card {
-    padding: 15px;
+    padding: 20px; /* Increase padding for more space inside */
     background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
     border: 4px solid white; /* Thick white border */
     color: white; /* Text inside the card */
@@ -65,7 +66,7 @@
     display: flex;
     flex-direction: column; /* Vertical layout */
     justify-content: space-between; /* Spread content inside the card */
-    height: 100%; /* Ensure full height for the cards */
+    min-height: 400px; /* Ensure larger height for the cards */
     overflow: hidden; /* Prevent overflow of content */
 }
 
@@ -88,7 +89,7 @@
     margin-top: 15px;
     overflow: hidden;
     text-overflow: ellipsis; /* Prevent long text from breaking the layout */
-    white-space: nowrap; /* Prevent text wrapping */
+    white-space: normal; /* Allow text to wrap normally */
 }
 
 /* Button for Live Demo */
@@ -119,13 +120,14 @@
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .my-col {
-        flex: 1 1 calc(45% - 15px); /* Set columns to take up 45% of width minus gap */
-        max-width: calc(45% - 15px);
+        flex: 1 1 calc(100% - 15px); /* Set columns to take up full width for smaller screens */
+        max-width: 100%;
     }
 
     .my-card {
         width: 100%;
         max-width: 100%;
+        min-height: 350px; /* Reduce height for smaller screens */
     }
 }
 
@@ -137,6 +139,7 @@
 
     .my-card {
         width: 100%;
+        min-height: 300px; /* Adjust height on smaller screens */
     }
 }
 
