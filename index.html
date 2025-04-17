@@ -123,6 +123,327 @@
     }
 }
 
+/*updated css for repo part*/
+/* General Section Styling */
+.project-portfolio {
+    background-color: #1e1e2f;
+    padding: 50px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.portfolio-title h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+/* Project Container Layout */
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.project-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    max-width: 33%;
+    margin: 0 15px;
+    min-width: 280px;
+}
+
+/* Card Styling */
+.project-card {
+    background-color: #2a2a40;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Project Title Styling */
+.project-title a {
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.project-title a:hover {
+    color: #3498db;
+}
+
+/* Project Description Styling */
+.project-description {
+    color: #b8b8d4;
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* CTA Button Styling */
+.cta-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #2c82c9;
+    box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-column {
+        max-width: 100%;
+        margin: 0 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-title a {
+        font-size: 20px;
+    }
+
+    .project-description {
+        font-size: 14px;
+    }
+
+    .cta-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    
+}
+.project-portfolio {
+    background-image: url('repoback.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 50px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn.ghost-btn, .cta-btn {
+    position: relative;
+    overflow: hidden;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(52, 152, 219, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(52, 152, 219, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(52, 152, 219, 0);
+    }
+}
+
+.project-portfolio {
+    background-image: url('repoback.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 50px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.portfolio-title h1 {
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.project-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    max-width: 33.33%;
+    margin: 15px;
+    min-width: 280px;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    transform: scale(1.05) translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.project-image {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-img {
+    transform: scale(1.1);
+}
+
+.project-title a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.project-title a:hover {
+    color: #3498db;
+}
+
+.project-description {
+    color: #f5f5f7;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 15px 0;
+    flex-grow: 1;
+}
+
+.cta-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.cta-btn:hover {
+    background-color: #2c82c9;
+    box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+    transform: scale(1.05);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(52, 152, 219, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(52, 152, 219, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(52, 152, 219, 0);
+    }
+}
+
+@media (max-width: 1024px) {
+    .project-column {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-column {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .project-card {
+        min-height: 350px;
+    }
+
+    .project-image {
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-title a {
+        font-size: 20px;
+    }
+
+    .project-description {
+        font-size: 14px;
+    }
+
+    .cta-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
 
         </style>
    
@@ -148,7 +469,7 @@
                         <a class="links" href="#achievements">Achievements</a> <!-- Updated link -->
                     </li>
                     <li class="menu-list-items">
-                        <a class="links" href="#portfolio">Repositories</a>
+                        <a class="links" href="#project-portfolio">Repositories</a>
                     </li>
                     <li class="menu-list-items">
                         <a class="links" href="#skills">Skills</a> <!-- Updated link -->
@@ -444,149 +765,128 @@
 </section>
      
     <!-- Portfolio Section -->
-<section class="portfolio" id="portfolio">
-    <div class="portfolio-heading">
-        <h1 style="color:white; font-size:40px; text-align:center; font-weight:700; margin-bottom:50px;">
-            GitHub Repositories
-        </h1>
-    </div>
-    <div class="portfolio-content">
-        <div class="my-row">
-            <!-- Card 1 -->
-            <div class="my-col">
-                <div class="my-card port-card" style="background-color:transparent; border-radius:20px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding:15px; transition:transform 0.3s, box-shadow 0.3s; width: 80%; max-width: 300px; height: auto;">
-
-                    <h3 class="greet-heading blue-text">
-                        <a href="https://github.com/VedanshPundir/OnlineQuiz" target="_blank" class="project-link" style="color:white; text-decoration:none; font-size:24px;">Quiz App</a>
-                    </h3>
-                    <p class="small-para" style="color:white; margin-top:15px;">
-                        The Quiz App is an interactive web application designed to provide an engaging learning experience through a series of trivia questions.
-
-                        Users can navigate a user-friendly interface to answer multiple-choice questions across various topics, enhancing their knowledge while having fun.
-                        
-                        The app features a countdown timer to create a sense of urgency.
-                        
-                        Its responsive design ensures a seamless experience on both desktops and mobile devices.
-                        
-                        Additionally, it includes copy-paste and tab-switching blockers to maintain the integrity of the quiz.
-                    </p>
-                    <a href="https://vedanshpundir.github.io/OnlineQuiz/" class="btn ghost-btn" target="_blank" style="background-color:#3498db; color:white; padding:10px 20px; border-radius:10px; text-decoration:none; display:inline-block; margin-top:20px;">Live Demo</a>
+    <section class="project-portfolio" id="project-portfolio">
+        <div class="portfolio-title">
+            <h1>GitHub Projects</h1>
+        </div>
+        <div class="portfolio-container">
+            <div class="project-row">
+                <!-- Card 1 -->
+                <div class="project-column">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="quiz.png" alt="Quiz App Screenshot" class="project-img">
+                        </div>
+                        <h3 class="project-title">
+                            <a href="https://github.com/VedanshPundir/OnlineQuiz" target="_blank" class="project-link">Quiz App</a>
+                        </h3>
+                        <p class="project-description">
+                            The Quiz App is an interactive web application designed to provide an engaging learning experience through a series of trivia questions. Users can navigate a user-friendly interface to answer multiple-choice questions across various topics, enhancing their knowledge while having fun. It includes a countdown timer and features to prevent cheating for a fair quiz experience.
+                        </p>
+                        <a href="https://vedanshpundir.github.io/OnlineQuiz/" class="cta-btn" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+    
+                <!-- Card 2 -->
+                <div class="project-column">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="to.png" alt="To-Do App Screenshot" class="project-img">
+                        </div>
+                        <h3 class="project-title">
+                            <a href="https://github.com/VedanshPundir/todoapp" target="_blank" class="project-link">To-Do App</a>
+                        </h3>
+                        <p class="project-description">
+                            This To-Do App helps users efficiently manage tasks and stay organized. With features to add, edit, and delete tasks, users can prioritize important items and track progress to stay on top of their daily activities.
+                        </p>
+                        <a href="https://vedanshpundir.github.io/todoapp/" class="cta-btn" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+    
+                <!-- Card 3 -->
+                <div class="project-column">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="pngtree-3d-render-of-geolocation-targeting-in-an-urban-cityscape-image_3873692.jpg" alt="GeoScan Screenshot" class="project-img">
+                        </div>
+                        <h3 class="project-title">
+                            <a href="https://github.com/VedanshPundir/Minor1.git" target="_blank" class="project-link">GeoScan</a>
+                        </h3>
+                        <p class="project-description">
+                            GeoScan is a network scanning tool developed in C++ that gathers detailed information about wireless-connected devices. It identifies IPs, device types, open ports, and geolocation, making it useful for network administrators and security analysts.
+                        </p>
+                        <a href="demo.png" class="cta-btn" target="_blank">Live Demo</a>
+                    </div>
                 </div>
             </div>
-
-            <!-- Card 2 -->
-            <div class="my-col">
-                <div class="my-card port-card" style="background-color:transparent; border-radius:20px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding:15px; transition:transform 0.3s, box-shadow 0.3s; width: 80%; max-width: 300px; height: auto;">
-
-                    <h3 class="greet-heading blue-text">
-                        <a href="https://github.com/VedanshPundir/todoapp" target="_blank" class="project-link" style="color:white; text-decoration:none; font-size:24px;">TODO App</a>
-                    </h3>
-                    <p class="small-para" style="color:white; margin-top:15px;">
-                        Welcome to our To-Do App!<br>
-            This application helps you efficiently manage your tasks and stay organized.
-            With a user-friendly interface, you can easily add, edit, and delete tasks,
-            allowing you to prioritize what matters most in your daily life.
-            Track your progress and clear your mind by keeping your to-do list up to date!
-                    </p>
-                    <a href="https://vedanshpundir.github.io/todoapp/" class="btn ghost-btn" target="_blank" style="background-color:#3498db; color:white; padding:10px 20px; border-radius:10px; text-decoration:none; display:inline-block; margin-top:20px;">Live Demo</a>
+    
+            <div class="project-row">
+                <!-- Card 4 -->
+                <div class="project-column">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="hack.jpeg" alt="Hacktoberfest 2024 Icon" class="project-img">
+                        </div>
+                        <h3 class="project-title">
+                            <a href="https://github.com/VedanshPundir/GeeksforGeeks-POTD-Solution.git" target="_blank" class="project-link">Hacktoberfest 2024</a>
+                        </h3>
+                        <p class="project-description">
+                            Participated in Hacktoberfest 2024 by contributing to open-source projects on GitHub. Collaborated on various repositories, improving features and resolving issues, and enhanced my understanding of open-source software development.
+                        </p>
+                    </div>
+                </div>
+    
+                <!-- Card 5 -->
+                <div class="project-column">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="Sorting-Algorithms.png" alt="Sorting Algorithms Icon" class="project-img">
+                        </div>
+                        <h3 class="project-title">
+                            <a href="https://github.com/VedanshPundir/Sorting-Techniques.git" target="_blank" class="project-link">Sorting Algorithms</a>
+                        </h3>
+                        <p class="project-description">
+                            Explore a collection of Java sorting techniques from traditional algorithms like Bubble Sort and Merge Sort to advanced techniques like Heap Sort. The repository provides clear implementations with explanations, ideal for learning sorting mechanisms.
+                        </p>
+                    </div>
+                </div>
+    
+                <!-- Card 6 -->
+                <div class="project-column">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="story.png" alt="Portfolio Website Screenshot" class="project-img">
+                        </div>
+                        <h3 class="project-title">
+                            <a href="https://github.com/VedanshPundir/VedanshPundir.github.io" target="_blank" class="project-link">Portfolio Website</a>
+                        </h3>
+                        <p class="project-description">
+                            This portfolio showcases various projects I’ve worked on, reflecting my technical expertise and interest in web development, cybersecurity, and problem-solving. From web development to security tools, I present my journey and continuous learning in Computer Science and Engineering.
+                        </p>
+                        <a href="https://vedanshpundir.github.io/" class="cta-btn" target="_blank">Live Demo</a>
+                    </div>
                 </div>
             </div>
-
-            <!-- Card 3 -->
-            <div class="my-col">
-                <div class="my-card port-card" style="background-color:transparent; border-radius:20px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding:15px; transition:transform 0.3s, box-shadow 0.3s; width: 80%; max-width: 300px; height: auto;">
-
-                    <h3 class="greet-heading blue-text">
-                        <a href="https://github.com/VedanshPundir/Minor1.git" target="_blank" class="project-link" style="color:white; text-decoration:none; font-size:24px;">GeoScan</a>
-                    </h3>
-                    <p class="small-para" style="color:white; margin-top:15px;">
-                        GeoScan is an advanced network scanning tool designed for gathering comprehensive information about wireless-connected devices in real-time.
-                        Developed in C++, this tool identifies device IPs, types, open ports, geolocation,
-                        and more, making it ideal for network administrators, enterprises, and government agencies.
-                        GeoScan enhances situational awareness.
-                    </p>
-                    <a href="demo.png" class="btn ghost-btn" target="_blank" style="background-color:#3498db; color:white; padding:10px 20px; border-radius:10px; text-decoration:none; display:inline-block; margin-top:20px;">Live Demo</a>
+    
+            <div class="project-row">
+                <!-- Card 7 -->
+                <div class="project-column">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="power.avif" alt="Business Analysis Dashboard Screenshot" class="project-img">
+                        </div>
+                        <h3 class="project-title">
+                            <a href="https://github.com/VedanshPundir/Sales-dashboard" target="_blank" class="project-link">Business Analysis Dashboard</a>
+                        </h3>
+                        <p class="project-description">
+                            Explore my Power BI dashboards where complex data is analyzed and visualized to generate business insights. These projects demonstrate my proficiency in data analysis and my ability to extract key performance indicators for decision-making.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="my-row">
-            <!-- Card 4 -->
-            <div class="my-col">
-                <div class="my-card port-card" style="background-color:transparent; border-radius:20px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding:15px; transition:transform 0.3s, box-shadow 0.3s; width: 80%; max-width: 300px; height: auto;">
-
-                    <h3 class="greet-heading blue-text">
-                        <a href="https://github.com/VedanshPundir/GeeksforGeeks-POTD-Solution.git" target="_blank" class="project-link" style="color:white; text-decoration:none; font-size:24px;">Hacktoberfest 2024</a>
-                    </h3>
-                    <p class="small-para" style="color:white; margin-top:15px;">
-                        Hacktoberfest is an annual event that encourages open-source contributions
-                        by developers worldwide.During Hacktoberfest 2024, I actively participated
-                        by contributing to various GitHub repositories, adding new features and fixing issues.
-                        This event not only helped me improve my coding skills but also allowed me to collaborate
-                        with the global developer community and support open-source projects.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="my-col">
-                <div class="my-card port-card" style="background-color:transparent; border-radius:20px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding:15px; transition:transform 0.3s, box-shadow 0.3s; width: 80%; max-width: 300px; height: auto;">
-
-                    <h3 class="greet-heading blue-text">
-                        <a href="https://github.com/VedanshPundir/Sorting-Techniques.git" target="_blank" class="project-link" style="color:white; text-decoration:none; font-size:24px;">Sorting Techniques</a>
-                    </h3>
-                    <p class="small-para" style="color:white; margin-top:15px;">
-                        Explore my GitHub repositories featuring a collection of Java sorting algorithms implemented for various use cases. From classic techniques like Bubble Sort, Merge Sort, and Quick Sort to advanced methods like Heap Sort and Cycle Sort, these projects highlight efficient approaches to organizing data. Each repository is crafted with clear code and explanations, making it a valuable resource for understanding the inner workings of sorting algorithms.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Card 6 -->
-            <div class="my-col">
-                <div class="my-card port-card" style="background-color:transparent; border-radius:20px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding:15px; transition:transform 0.3s, box-shadow 0.3s; width: 80%; max-width: 300px; height: auto;">
-
-                    <h3 class="greet-heading blue-text">
-                        <a href="https://github.com/VedanshPundir/VedanshPundir.github.io" target="_blank" class="project-link" style="color:white; text-decoration:none; font-size:24px;">Portfolio Website</a>
-                    </h3>
-                    <p class="small-para" style="color:white; margin-top:15px;">
-                        Hello, I’m Vedansh Pundir, a passionate Computer Science and Engineering student with a focus on Cyber Security. With a strong foundation in programming languages like C, C++, Java, JavaScript, and HTML, I am constantly exploring innovative ways to solve problems and create impactful solutions. My portfolio showcases a variety of projects that highlight my technical skills, creativity, and dedication to continuous learning. From web development to cybersecurity, you’ll find examples of my work that reflect my commitment to excellence and growth.
-                    </p>
-                    <a href="https://vedanshpundir.github.io/" class="btn ghost-btn" target="_blank" style="background-color:#3498db; color:white; padding:10px 20px; border-radius:10px; text-decoration:none; display:inline-block; margin-top:20px;">Live Demo</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="my-row">
-            <!-- Card 7 -->
-            <div class="my-col">
-                <div class="my-card port-card" style="background-color:transparent; border-radius:20px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding:15px; transition:transform 0.3s, box-shadow 0.3s; width: 80%; max-width: 300px; height: auto;">
-
-                    <h3 class="greet-heading blue-text">
-                        <a href="https://github.com/VedanshPundir/Sales-dashboard" target="_blank" class="project-link" style="color:white; text-decoration:none; font-size:24px;">Business Analysis Dashboard</a>
-                    </h3>
-                    <p class="small-para" style="color:white; margin-top:15px;">
-                        Explore my interactive Power BI dashboards, where I analyze and visualize complex data to uncover actionable insights. These dashboards demonstrate my proficiency in data analysis, visualization, and storytelling using Power BI, offering a comprehensive view of key business metrics and trends. Click below to dive into the detailed reports.
-                    </p>
-                    <a href="https://github.com/VedanshPundir/Sales-dashboard" class="btn ghost-btn" target="_blank" style="background-color:#3498db; color:white; padding:10px 20px; border-radius:10px; text-decoration:none; display:inline-block; margin-top:20px;">Live Demo</a>
-                </div>
-            </div>
-
-            <!-- Card 8 -->
-            <div class="my-col">
-                <div class="my-card port-card" style="background-color:transparent; border-radius:20px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding:15px; transition:transform 0.3s, box-shadow 0.3s; width: 80%; max-width: 300px; height: auto;">
-
-                    <h3 class="greet-heading blue-text">
-                        <a href="https://github.com/VedanshPundir/FileGuard.git" target="_blank" class="project-link" style="color:white; text-decoration:none; font-size:24px;">File Integrity Monitoring Tool</a>
-                    </h3>
-                    <p class="small-para" style="color:white; margin-top:15px;">
-                        The File Integrity Monitoring (FIM) tool detects unauthorized changes to critical files and directories by continuously tracking modifications, additions, or deletions. It provides real-time alerts and detailed logs to ensure system integrity, enhancing security and helping organizations meet compliance standards. This tool is an essential solution for protecting against file tampering and unauthorized access.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
+    </section>
+    
    
   <!-- Skills Section -->
 <section class="skills" id="skills">

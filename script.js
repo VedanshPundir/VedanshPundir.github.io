@@ -229,3 +229,35 @@ function sendEmail() {
     
     window.location.href = `mailto:vedanshpundir43@gmail.com?subject=${subject}&body=${body}`;
   }
+
+  /*----------------------------------------
+  -------------------------*/
+
+  document.addEventListener('DOMContentLoaded', () => {
+    // Image fallback handling
+    const images = document.querySelectorAll('.project-img');
+    const fallbackImage = 'https://via.placeholder.com/300x150?text=Project+Image';
+
+    images.forEach(img => {
+        img.addEventListener('error', () => {
+            img.src = fallbackImage;
+            img.alt = 'Placeholder Project Image';
+        });
+    });
+
+    // Animate cards on scroll
+    const cards = document.querySelectorAll('.project-card');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate-in');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    cards.forEach(card => {
+        card.classList.add('animate-out');
+        observer.observe(card);
+    });
+});
